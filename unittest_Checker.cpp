@@ -30,7 +30,7 @@ void testAllConditions(){
   assert(isBatteryOk(0, 50, 0.5) == true);
 
   // Case 9: Maximum Boundary value for Temperature
-  assert(batteryIsOk(45, 50, 0.5) == true);
+  assert(isBatteryOk(45, 50, 0.5) == true);
 
   // Case 10: Minimum Boundary for SOC
   assert(isBatteryOk(25, 20, 0.5) == true);
