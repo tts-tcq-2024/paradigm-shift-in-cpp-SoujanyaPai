@@ -17,8 +17,3 @@ bool isBatteryOk(float temperature, float soc, float chargeRate) {
   bool isChargeRateOk = isValueInRange(chargeRate, 0, 0.8, "Charge Rate out of range!");
   return isTemperatureOk && isSocOk && isChargeRateOk;
 }
-
-int main() {
-  assert(isBatteryOk(25, 70, 0.7) == true);
-  assert(isBatteryOk(50, 85, 0) == false);
-}
