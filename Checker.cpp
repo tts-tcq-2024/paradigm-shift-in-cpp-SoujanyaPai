@@ -11,7 +11,7 @@ bool isValueInRange(float value, float min, float max, const char* errorMessage)
   return true;
 }
  
-bool batteryIsOk(float temperature, float soc, float chargeRate) {
+bool isBatteryOk(float temperature, float soc, float chargeRate) {
   bool isTemperatureOk = isValueInRange(temperature, 0, 45, "Temperature out of range!");
   bool isSocOk = isValueInRange(soc, 20, 80, "State of Charge out of range!");
   bool isChargeRateOk = isValueInRange(chargeRate, 0, 0.8, "Charge Rate out of range!");
@@ -19,6 +19,6 @@ bool batteryIsOk(float temperature, float soc, float chargeRate) {
 }
 
 int main() {
-  assert(batteryIsOk(25, 70, 0.7) == true);
-  assert(batteryIsOk(50, 85, 0) == false);
+  assert(isBatteryOk(25, 70, 0.7) == true);
+  assert(isBatteryOk(50, 85, 0) == false);
 }
