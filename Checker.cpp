@@ -1,5 +1,6 @@
 #include <assert.h>
 #include <iostream>
+#include "Checker.hpp"
 using namespace std;
 
 bool isValueInRange(float value, float min, float max, const char* errorMessage){
