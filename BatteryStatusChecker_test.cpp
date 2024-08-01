@@ -5,6 +5,7 @@
 using namespace std;
 
 void testAllConditions(){
+
   // Case 1: All values within the range and Battery is Ok
   assert(isBatteryOk(25, 70, 0.7) == true);
 
@@ -42,7 +43,18 @@ void testAllConditions(){
   assert(isBatteryOk(25, 50, 0.8) == true);
 }
 
-int main() {
+void testForEnglish(){
+  currentLanguage = ENGLISH;
   testAllConditions();
+}
+
+void testForGerman(){
+  currentLanguage = GERMAN;
+  testAllConditions();
+}
+
+int main() {
+  testForEnglish();
+  testForGerman();
   cout << "All tests passed!" << endl;
 }
