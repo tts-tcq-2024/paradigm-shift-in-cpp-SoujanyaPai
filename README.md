@@ -51,10 +51,12 @@ Can we add new functionality without disturbing the old?
 - Predicting the future requires Astrology!
 
 ## Keep it Simple
-
 Shorten the Semantic distance
 
 - Procedural to express sequence
 - Functional to express relation between input and output
 - Object oriented to encapsulate state with actions
 - Apect oriented to capture repeating aspects
+
+## Extensions implemented
+- Support a language in addition to English
