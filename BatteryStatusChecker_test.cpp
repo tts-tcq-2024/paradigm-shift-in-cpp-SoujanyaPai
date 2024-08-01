@@ -46,15 +46,16 @@ void testAllConditions(){
 void testForEnglish(){
   currentLanguage = ENGLISH;
   testAllConditions();
+  cout << "All tests passed!" << endl;
 }
 
 void testForGerman(){
   currentLanguage = GERMAN;
   testAllConditions();
+  cout << "Alle tests bestanden!" << endl;
 }
 
 int main() {
   testForEnglish();
   testForGerman();
-  cout << "All tests passed!" << endl;
 }
